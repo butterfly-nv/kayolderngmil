@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0e3fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 65%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #001e4d;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #001e4d;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer .fa {
+    margin-right: 15px;
+    transition: color 0.3s;
+    font-size: 30px ;
+    line-height: 44px ;
+    width: 44px ;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+} 
+footer.footer {
+    background-color: #84c4f3;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0e3fc;
+    color: #333;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #333;
+}
+
+.member {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.member-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #0056b3;
+}
+
+p {
+    margin: 5px 0;
+}
+

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/quiz.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-lg navbar-blue" style="background-color: #84c4f3;">
+        <a class="navbar-brand" href="#">Ka Yol Derng</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More Option
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="homepage.html">Home</a></li>
+                        <li><a class="dropdown-item" href="resourses.html">Resources</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Qiuz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="quiz.html">English</a></li>
+                        <li><a class="dropdown-item" href="quiz-kh.html">Khmer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="quiz-container">
+        <h2>Misinformation Quiz</h2>
+    
+        <!-- Question 1 -->
+        <div class="quiz-question active" id="question1" aria-required="true">
+            <p>Question 1: What should you do before posting or sharing any information? 1. តើត្រូវធ្វើអ្វីមុនពេលដាក់ផ្សាយឬចែករំលែកព័ត៌មានមួយ?</p>
+            <div class="answer-option" onclick="selectOption(1, 'A')">A) Automatically publish it ក) ផ្សព្វផ្សាយដោយស្វ័យប្រវត្តិ</div>
+            <div class="answer-option" onclick="selectOption(1, 'B')">B) Verify the information and its source ខ) ផ្ទៀងផ្ទាត់ព័ត៌មាននិងប្រភពច្បាស់លាស់</div>
+            <div class="answer-option" onclick="selectOption(1, 'C')">C) Change the source of the information គ) ប្តូរប្រភពព័ត៌មាន</div>
+            <div class="answer-option" onclick="selectOption(1, 'D')">D) Create new videos and photos ឃ) បង្កើតវីដេអូនិងរូបថតថ្មី</div>
+        </div>
+    
+        <!-- Question 2 -->
+        <div class="quiz-question" id="question2" required>
+            <p>Question 2: What should you consider when sharing photos or videos? 2. តើអ្នកគួរតែផ្ដោតលើអ្វីនៅពេលចែករំលែករូបថតឬវីដេអូ?</p>
+            <div class="answer-option" onclick="selectOption(2, 'A')">A) Share it based on your personal opinion ក) ផ្សព្វផ្សាយវាតាមគំនិតផ្ទាល់ខ្លួន</div>
+            <div class="answer-option" onclick="selectOption(2, 'B')">B) Share it with the general public ខ) ចែករំលែកឱ្យក្រុមមនុស្សទូទៅ</div>
+            <div class="answer-option" onclick="selectOption(2, 'C')">C) Consider the impact it may have on you and others គ) គិតពីផលវិបាកដែលវាអាចបណ្តាលឱ្យអ្នកនិងអ្នកដទៃ</div>
+            <div class="answer-option" onclick="selectOption(2, 'D')">D) Make new videos and photos ឃ) ធ្វើវីដេអូនិងរូបថតថ្មី</div>
+        </div>
+    
+        <!-- Question 3 -->
+        <div class="quiz-question" id="question3" required>
+            <p>Question 3:  What should you avoid doing on the internet? 3. តើអ្វីដែលអ្នកមិនគួរធ្វើតាមអុីនធឺណិត?</p>
+            <div class="answer-option" onclick="selectOption(3, 'A')">A) Create new ideas ក) បង្កើតគំនិតថ្មី</div>
+            <div class="answer-option" onclick="selectOption(3, 'B')">B) Post articles about culture ខ) ផ្សព្វផ្សាយអត្ថបទស្តីពីវប្បធម៌</div>
+            <div class="answer-option" onclick="selectOption(3, 'C')">C) Undermine people's reputation and dignity គ) ធ្វើឱ្យប៉ះពាល់ដល់កេរ្តិ៍ឈ្មោះនិងតម្លៃមនុស្ស</div>
+            <div class="answer-option" onclick="selectOption(3, 'D')">D) Make entertaining videos ឃ) ធ្វើវីដេអូកំសាន្ត</div>
+        </div>
+    
+        <!-- Question 4 -->
+        <div class="quiz-question" id="question4" required>
+            <p>Question 4: What type of misinformation occurs when real facts are presented but used in a way that leads people to incorrect conclusions? 4. ខ្លឹមសារបំភាន់ប្រើប្រាស់ការពិតត្រឹមត្រូវប៉ុន្តែប្រើក្នុងវិធីដែលនាំឱ្យមនុស្សមានការសន្និដ្ឋានខុស គឺជាអ្វី?</p>
+            <div class="answer-option" onclick="selectOption(4, 'A')">A) Satire and Parody ក) ការតិះដៀល និងការសើចចំអក</div>
+            <div class="answer-option" onclick="selectOption(4, 'B')">B) False Context ខ) បរិបទមិនពិត</div>
+            <div class="answer-option" onclick="selectOption(4, 'C')">C) Fabricated Content គ) ខ្លឹមសារប្រឌិត</div>
+            <div class="answer-option" onclick="selectOption(4, 'D')">D) Misleading Content ឃ) ខ្លឹមសារបំភាន់</div>
+        </div>
+    
+        <!-- Question 5 -->
+        <div class="quiz-question" id="question5" required>
+            <p>Question 5: What should you know to protect your online property? 5. តើអ្នកគួរចេះអ្វីដើម្បីការពារទ្រព្យសម្បត្តិអនឡាញរបស់អ្នក?</p>
+            <div class="answer-option" onclick="selectOption(5, 'A')">A) Manage your messages ក) គ្រប់គ្រងសាររបស់អ្នក</div>
+            <div class="answer-option" onclick="selectOption(5, 'B')">B) Understand intellectual property laws and information ខ) ស្គាល់ច្បាប់និងព័ត៌មានទាក់ទងនឹងកម្មសិទ្ធិបញ្ញា</div>
+            <div class="answer-option" onclick="selectOption(5, 'C')">C) Publish many videos គ) ផ្សព្វផ្សាយវីដេអូច្រើន</div>
+            <div class="answer-option" onclick="selectOption(5, 'D')">D) Create new photos ឃ) បង្កើតរូបថតថ្មី</div>
+        </div>
+    
+        <!-- Question 6  -->
+        <div class="quiz-question" id="question6" required>
+            <p>Question 6: Why should you avoid using the internet to spread information? 6. តើមូលហេតុអ្វីដែលអ្នកមិនគួរប្រើប្រាស់អុីនធឺណេតដើម្បីផ្សព្វផ្សាយព័ត៌មាន?</p>
+            <div class="answer-option" onclick="selectOption(6, 'A')">A) To share educational articles ក) ដើម្បីផ្សព្វផ្សាយអត្ថបទចំណេះដឹង</div>
+            <div class="answer-option" onclick="selectOption(6, 'B')">B) To harm the dignity and reputation of others ខ) ដើម្បីប៉ះពាល់កេរ្តិ៍ឈ្មោះនិងសេចក្តីថ្លៃថ្នូរបស់អ្នកដទៃ</div>
+            <div class="answer-option" onclick="selectOption(6, 'C')">C) Share current facts គ) ចែករំលែកការពិតបច្ចុប្បន្ន</div>
+            <div class="answer-option" onclick="selectOption(6, 'D')">D) Create innovative religious ideas ឃ) បង្កើតគំនិតសាសនាប្រកបដោយច្នៃប្រឌិត</div>
+        </div>
+    
+        <!-- Question 7 -->
+        <div class="quiz-question" id="question7" required>
+            <p>Question 7: What can promoting fake photos lead to? 7. តើការផ្សព្វផ្សាយរូបភាពក្លែងក្លាយអាចបណ្តាលឱ្យមានអ្វី?</p>
+            <div class="answer-option" onclick="selectOption(7, 'A')">A) Harm reputation and possibly lead to legal action ក) ប៉ះពាល់កេរ្តិ៍ឈ្មោះនិងអាចឈានដល់ការប្ដឹងតាមផ្លូវច្បាប់</div>
+            <div class="answer-option" onclick="selectOption(7, 'B')">B) Create new jobs ខ) បង្កើតការងារថ្មី</div>
+            <div class="answer-option" onclick="selectOption(7, 'C')">C) Create new poetry គ) បង្កើតកំណាព្យថ្មី</div>
+            <div class="answer-option" onclick="selectOption(7, 'D')">D) Make a documentary video ឃ) បង្កើតវីដេអូផ្តិតរូប</div>
+        </div>
+    
+        <!-- Question 8 -->
+        <div class="quiz-question" id="question8" required>
+            <p>Question 8: How should you respect your intellectual rights? 8. តើអ្នកគួរប្រើវិធីណាដើម្បីគោរពសិទ្ធិបញ្ញារបស់អ្នក?</p>
+            <div class="answer-option" onclick="selectOption(8, 'A')">A) Post videos daily ក) បង្ហោះវីដេអូរៀងរាល់ថ្ងៃ</div>
+            <div class="answer-option" onclick="selectOption(8, 'B')">B) Share messages on social media ខ) ចែករំលែកសារលើបណ្ដាញសង្គម</div>
+            <div class="answer-option" onclick="selectOption(8, 'C')">C) Create achievements based on personal ideas គ) បង្កើតសមិទ្ធផលតាមគំនិតផ្ទាល់ខ្លួន</div>
+            <div class="answer-option" onclick="selectOption(8, 'D')">D) Release properly protected content ឃ) បញ្ចេញអត្ថបទដែលមានការការពារត្រឹមត្រូវ</div>
+        </div>
+    
+        <!-- Question 9 -->
+        <div class="quiz-question" id="question9" required>
+            <p>Question 9: What should you do when sharing information online? 9. តើអ្នកគួរអ្វីនៅពេលចែករំលែកព័ត៌មានលើអុីនធឺណេត?</p>
+            <div class="answer-option" onclick="selectOption(9, 'A')">A) Verify the source and facts ក) ផ្ទៀងផ្ទាត់ពីប្រភពនិងការពិត</div>
+            <div class="answer-option" onclick="selectOption(9, 'B')">B) Show a lot of information to attract people ខ) បង្ហាញព័ត៌មានច្រើនដើម្បីទាក់ទាញមនុស្ស</div>
+            <div class="answer-option" onclick="selectOption(9, 'C')">C) Publish it for free គ) ផ្សព្វផ្សាយឥតគិតថ្លៃ</div>
+            <div class="answer-option" onclick="selectOption(9, 'D')">D) Create personal sources ឃ) បង្កើតប្រភពផ្ទាល់ខ្លួន</div>
+        </div>
+    
+         <!-- Question 10 -->
+         <div class="quiz-question" id="question10" required>
+            <p>Question 10: Why shouldn't you fully believe what you see on the internet? 10. តើមិនត្រូវជឿទាំងស្រុងអ្វីដែលអ្នកឃើញនៅលើអុីនធឺណេតដោយសារអ្វី?</p>
+            <div class="answer-option" onclick="selectOption(10, 'A')">A) The information might be accurate ក) ព័ត៌មានអាចត្រឹមត្រូវ</div>
+            <div class="answer-option" onclick="selectOption(10, 'B')">B) The information might be false and unethical ខ) ព័ត៌មានអាចខុសនិងអសីលធម៌</div>
+            <div class="answer-option" onclick="selectOption(10, 'C')">C) The source should be recognized គ) ប្រភពគួរត្រូវបានទទួលស្គាល់</div>
+            <div class="answer-option" onclick="selectOption(10, 'D')">D) It is information from public events ឃ) វាជាព័ត៌មានពីព្រឹត្តិការណ៍សាធារណៈ"</div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="quiz-question" id="question11" >
+            <p>Question 11: Satire and parody can sometimes trick people into believing they are real news. 11. សេចក្តីត្រៀមនិងការសើចចំអក ពេលខ្លះអាចបញ្ឆោតមនុស្សឱ្យជឿថាវាជាព័ត៌មានពិត។
+            </p>
+            <div class="answer-option" onclick="selectOption(11, 'A')">A) True ក) ពិត</div>
+            <div class="answer-option" onclick="selectOption(11, 'B')">B) False ខ) មិនពិត</div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="quiz-question" id="question12" >
+            <p>Question 12: False connections happen when the content of an article perfectly matches its headline. 12. ការភ្ជាប់អត្ថន័យមិនពិត កើតឡើងនៅពេលដែលខ្លឹមសារនៃអត្ថបទស្របគ្នាជាមួយចំណងជើងរបស់វា។</p>
+            <div class="answer-option" onclick="selectOption(12, 'A')">A) True ក) ពិត</div>
+            <div class="answer-option" onclick="selectOption(12, 'B')">B) False ខ) មិនពិត</div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="quiz-question" id="question13" >
+            <p>Question 13: Imposter content pretends to be something it's not, like fake videos or news articles online. 13. ខ្លឹមសារក្លែងបន្លំ ស្ថិតនៅលើអ្វីដែលវាមិនមែន ជារូបភាពវីដេអូក្លែងក្លាយ ឬព័ត៌មានតាមអ៊ីនធឺណិត។</p>
+            <div class="answer-option" onclick="selectOption(13, 'A')">A) True ក) ពិត</div>
+            <div class="answer-option" onclick="selectOption(13, 'B')">B) False ខ) មិនពិត</div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="quiz-question" id="question14" >
+            <p>Question 14: Fabricated content is completely made up to mislead people and manipulate their emotions. 14. ខ្លឹមសារដែលបានប្រឌិត គឺបង្កើតឡើងសម្រាប់បញ្ឆោតមនុស្សនិងធ្វើឱ្យពួកគេមានអារម្មណ៍ខុស។</p>
+            <div class="answer-option" onclick="selectOption(14, 'A')">A) True ក) ពិត</div>
+            <div class="answer-option" onclick="selectOption(14, 'B')">B) False ខ) មិនពិត</div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="quiz-question" id="question15" >
+            <p>Question 15: Manipulated content refers to unchanged videos or photos shared truthfully online. 15. ខ្លឹមសារកែច្នៃ គឺបង្ហាញពីរូបភាព ឬវីដេអូដែលមិនបានផ្លាស់ប្តូរប៉ុន្តែត្រូវបានចែករំលែកយ៉ាងត្រឹមត្រូវតាមអ៊ីនធឺណិត។</p>
+            <div class="answer-option" onclick="selectOption(15, 'A')">A) True ក) ពិត</div>
+            <div class="answer-option" onclick="selectOption(15, 'B')">B) False ខ) មិនពិត</div>
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <div class="buttons">
+            <button class="btn" id="backBtn" onclick="previousQuestion()" style="display: none;">Back</button>
+            <button class="btn" id="nextBtn" onclick="nextQuestion()">Next</button>
+        </div>
+    
+        <!-- Submit Button (shown after the last question) -->
+        <div class="buttons" id="submitBtnContainer" style="display: none;">
+            <button class="btn" onclick="submitQuiz()">Submit</button>
+        </div>
+    
+        <div id="quizResult" class="results"></div>
+    
+        <div id="quizSummary" class="summary" style="display: none;"></div>
+        <button id="retryBtn" class="btn" style="display: none;">Retry</button>
+    </div>
+
+    <footer class="footer bg-blue text-black">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are a dedicated team committed to combating misinformation through education and awareness. Learn more about our mission and team.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="homepage.html" class="text-black">Home</a></li>
+                        <li><a href="about-us.html" class="text-black">About Us</a></li>
+                        <li><a href="quiz.html" class="text-black">Quiz</a></li>
+                        <li><a href="resourses.html" class="text-black">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-black"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-black"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-black"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-black"><i class="fa fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Misinformation Awareness. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./js/quiz.js"></script>     
+    </body>
+</html>

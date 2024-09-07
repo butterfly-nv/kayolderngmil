@@ -1,0 +1,80 @@
+
+.footer .fa {
+    margin-right: 15px;
+    transition: color 0.3s;
+    font-size: 30px ;
+    line-height: 44px ;
+    width: 44px ;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header.jumbotron {
+    background-color: #c0e3fc;
+    color: white;
+    padding: 100px 25px;
+}
+
+header.jumbotron h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+header.jumbotron p.lead {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.features {
+    padding: 50px 20px;
+}
+
+.feature-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.call-to-action {
+    background-color: #84c4f3;
+    color: white;
+    padding: 60px 20px;
+}
+
+footer.footer {
+    background-color: #84c4f3;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}

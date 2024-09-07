@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #c0e3fc;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            margin-bottom: 20px;
+        }
+        .language-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            margin: 10px auto;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .language-button.selected {
+            background-color: #cceeff;
+            border-color: blue;
+        }
+        .language-button:hover {
+            background-color: #f0f0f0;
+            border-color: blue;
+        }
+        .continue-button {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .continue-button:hover {
+            background-color: #0053ba;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+            }
+            .container h1 {
+                font-size: 20px;
+            }
+            .language-button, .continue-button {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container h1 {
+                font-size: 18px;
+            }
+            .language-button, .continue-button {
+                padding: 10px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="choose-lan">សូមជ្រើសរើសភាសា/Choose your preferred language</h1>
+        <div class="button-container">
+            <button class="language-button" onclick="changeLanguage('Khmer')" id="khmerBtn">ភាសាខ្មែរ/Khmer</button>
+            <button class="language-button" onclick="changeLanguage('English')" id="englishBtn">ភាសាអង់គ្លេស/English</button>
+        </div>
+        <button id="continueBtn" class="continue-button" onclick="redirectToPage()">បន្ត/Next</button>
+    </div>
+
+    <script>
+        var selectedLanguage = 'Khmer';  // Default language
+
+        // Function to change the text of the "Continue" button and heading based on selected language
+        function changeLanguage(language) {
+            var continueBtn = document.getElementById('continueBtn');
+            var chooseLanHeading = document.getElementById('choose-lan');
+            var khmerBtn = document.getElementById('khmerBtn');
+            var englishBtn = document.getElementById('englishBtn');
+            selectedLanguage = language;  // Set the selected language
+
+            if (language === 'Khmer') {
+                chooseLanHeading.textContent = 'សូមជ្រើសរើសភាសា';
+                continueBtn.textContent = 'បន្ត';
+                khmerBtn.classList.add('selected');
+                englishBtn.classList.remove('selected');
+            } else if (language === 'English') {
+                chooseLanHeading.textContent = 'Choose your preferred language';
+                continueBtn.textContent = 'Next';
+                englishBtn.classList.add('selected');
+                khmerBtn.classList.remove('selected');
+            }
+        }
+
+        // Function to redirect to the appropriate page based on the selected language
+        function redirectToPage() {
+            if (selectedLanguage === 'Khmer') {
+                window.location.href = 'h-kh.html';  // Redirect to Khmer page
+            } else if (selectedLanguage === 'English') {
+                window.location.href = 'homepage.html';  // Redirect to English page
+            }
+        }
+    </script>
+</body>
+</html>
