@@ -28,7 +28,8 @@ body {
 
 header.jumbotron {
     background-color: #c0e3fc;
-    color: white;
+    color: black;
+    font-weight: bold;
     padding: 100px 25px;
 }
 
